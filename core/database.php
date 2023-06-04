@@ -13,12 +13,10 @@ class Database
             $conn->exec($query);
             $conn->exec("USE " . DBNAME);
         
-            // Verifica se a tabela 'users' já existe
             $query = "SHOW TABLES LIKE 'users'";
             $result = $conn->query($query);
 
             if ($result->rowCount() == 0) {
-                // A tabela 'users' ainda não existe, então criamos ela
                 $query = "CREATE TABLE users (
                             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                             name VARCHAR(40) NOT NULL,
@@ -33,11 +31,10 @@ class Database
                         )";
                 $conn->exec($query);
 
-                // Insere o registro de exemplo
                 $query = "INSERT INTO users 
                     (name, email, password, status, address, cep, city, created_at, updated_at) 
                     VALUES 
-                    ('Erik', 'erik@hotmail.com', '123', 'active', 'Endereço teste', '95322999', 'Porto Alegre', null, null )";
+                    ('Erik', 'erik@hotmail.com', '123', 'active', 'Endereço teste', '95322999', 'Porto Alegre', NOW(), null)";
                 $conn->exec($query);
 
                 $query = "CREATE TABLE login_attempts (

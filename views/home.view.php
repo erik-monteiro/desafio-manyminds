@@ -39,8 +39,8 @@
                 <div class="card" style="width: 100%; height: 100%;">
                     <div class="card-body">
                         <h5 class="card-title" style="font-size: 25px;">Logs do sistema</h5>
-                        <p class="card-text mt-4">Veja aqui todos</p>
-                        <a href="<?= ROOT ?>/users" class="btn btn-sm btn-outline-primary radius-15">Ver todos</a>
+                        <p class="card-text mt-4">Todas as alterações feitas no sistema</p>
+                        <a href="<?= ROOT ?>/log" class="btn btn-sm btn-outline-primary radius-15">Ver todos</a>
                     </div>
                 </div>
             </div>

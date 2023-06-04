@@ -2,7 +2,7 @@
 
 $servername = "localhost"; 
 $username = "root";
-$password = "X142x536x@"; 
+$password = ""; 
 $dbname = "manyminds"; 
 
 define('SERVER_NAME', $servername);
