@@ -3,7 +3,7 @@ para logar no sistema, use:
 email: erik@hotmail.com
 senha: 123
 
-caso a base de dados não seja criada automaticamente ao acessar o servidor local,
+caso a base de dados não seja criada automaticamente ao acessar o servidor local, 0oIhtoQlva
 crie em seu ambiente local com o nome 'manyminds'
 
 acesse o arquivo core/config.php para configurar o usuário do seu banco de dados, senha, etc...
